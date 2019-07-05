@@ -9,7 +9,7 @@ const toggleBelongsToService = (toggle, serviceName) => {
 
 module.exports = (togglestate, service) => {
     const toggles = get(togglestate, 'toggles', []);
-    const togglesForService = toggles.filter(t => toggleBelongsToService(t, service));
+    const togglesForService = toggles.filter((t) => toggleBelongsToService(t, service));
 
-    return togglesForService.map(t => t.id);
+    return togglesForService.map((t) => t.id);
 };
