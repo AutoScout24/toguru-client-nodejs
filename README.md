@@ -2,20 +2,19 @@
 
 > A `TypeScript` client for integrating Toguru into a `Node.js` environment
 
-> [![Actions Status](https://github.com/Scout24/toguru-client-nodejs/workflows/Build/badge.svg)](https://github.com/Scout24/toguru-client-nodejs/actions) ![npm](https://img.shields.io/npm/v/toguru-client)
+> [![Actions Status](https://github.com/Scout24/toguru-client-nodejs/workflows/Build/badge.svg)](https://github.com/Scout24/toguru-client-nodejs/actions) ![npm](https://img.shields.io/npm/v/@autoscout24/toguru-client)
 
 <!-- installing doctoc: https://github.com/thlorenz/doctoc#installation -->
 <!-- tocdoc command: doctoc ./README.md --maxlevel 3 --notitle -->
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Base Client](#base-client)
-  - [Express Bridge](#express-bridge)
-- [Testing](#testing)
-  - [Express](#express)
+-   [Installation](#installation)
+-   [Usage](#usage)
+    -   [Base Client](#base-client)
+    -   [Express Bridge](#express-bridge)
+-   [Testing](#testing)
+    -   [Express](#express)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -116,7 +115,7 @@ In general, we recommend parametrizing your main application to take a toguru cl
 
 ### Express
 
-Following the pattern align above, a typical `Express` application will look like 
+Following the pattern align above, a typical `Express` application will look like
 
 ```ts
 const application = (
