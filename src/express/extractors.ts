@@ -65,6 +65,7 @@ export const fromQueryParam = (name: string): ForcedToggleExtractor => (request)
  * Fetches forced toggles from a request based on defaults
  */
 export const defaultForcedTogglesExtractor: ForcedToggleExtractor = (request: Request): Record<string, boolean> => ({
+    ...fromCookie('x-toguru')(request),
     ...fromCookie('toguru')(request),
     ...fromHeader('x-toguru')(request),
     ...fromHeader('toguru')(request),
